@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Extensões</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <h1><img src="assets/logo.svg" alt="Ícone" class="logo"> Extensions</h1>
+  </header>
+
+  <main class="container">
+    <div class="controle-filtros">
+      <input type="text" id="pesquisa" placeholder="Pesquisar extensões..." />
+      <div class="botoes-filtro">
+        <button data-filtro="all" class="ativo">All</button>
+        <button data-filtro="active">Active</button>
+        <button data-filtro="inactive">Inactive</button>
+      </div>
+    </div>
+
+    <section id="lista-extensoes" class="lista-extensoes">
+      <!-- Cards de extensões gerados dinamicamente via JavaScript -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
