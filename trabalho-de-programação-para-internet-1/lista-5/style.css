@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e1525;
+    color: #fff;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  /* Cabeçalho */
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .cabecalho h1 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    width: 24px;
+  }
+  
+  /* Filtros */
+  .controle-filtros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  .controle-filtros input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    width: 60%;
+    max-width: 300px;
+  }
+  
+  .botoes-filtro {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .botoes-filtro button {
+    background-color: #1f2a48;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .botoes-filtro button.ativo,
+  .botoes-filtro button:hover {
+    background-color: #4c5fff;
+  }
+  
+  /* Cards */
+  .lista-extensoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: #1f2a48;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .card .botoes-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .card button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .card .toggle {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .card .toggle::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s;
+  }
+  
+  .card.ativa .toggle {
+    background: #4caf50;
+  }
+  
+  .card.ativa .toggle::before {
+    transform: translateX(20px);
+  }
+  
