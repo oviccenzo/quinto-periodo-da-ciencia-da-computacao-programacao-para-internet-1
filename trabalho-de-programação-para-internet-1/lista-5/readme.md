@@ -1,6 +1,6 @@
 # Lista 05 - Interface de gerenciamento de extensões do navegador
 
-https://github.com/andreluizfrancabatista/browser-extensions-manager-ui/blob/main/preview.jpg
+<img width="1440" height="1056" alt="image" src="https://github.com/user-attachments/assets/983c56cf-cfe8-45f0-8aea-877f48818311" />
 
 ## Instruções! 👋
 
