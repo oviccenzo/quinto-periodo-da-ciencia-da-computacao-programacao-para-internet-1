@@ -1,6 +1,6 @@
 # Lista 05 - Interface de gerenciamento de extensões do navegador
 
-![Prévia do design para o desafio de codificação da Interface de gerenciamento de extensões do navegador](./preview.jpg)
+https://github.com/andreluizfrancabatista/browser-extensions-manager-ui/blob/main/preview.jpg
 
 ## Instruções! 👋
 
