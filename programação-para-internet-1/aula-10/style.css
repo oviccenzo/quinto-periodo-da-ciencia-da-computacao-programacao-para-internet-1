@@ -1,0 +1,14 @@
+body{
+    background: goldenrod;
+    margin: 122px;
+    border: none;
+    padding: 1px;
+}
+
+input{
+    color: red;
+}
+
+div {
+    color: blue;
+}

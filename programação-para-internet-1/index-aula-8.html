@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TODO List Simples</title>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.todo-container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h2>Minha TODO List</h2>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+      <button id="addbtn" onclick="addTask()">Adicionar</button>
+    </div>
+    <ul class="todo-list" id="todoList">
+      <li class="todo-item">
+        Comprar pão
+        <button class="delete-btn" onclick="deleteTask(this)">Excluir</button>
+      </li>
+      <li class="todo-item">
+        Estudar HTML
+        <button class="delete-btn" onclick="deleteTask(this)">Excluir</button>
+      </li>
+    </ul>
+  </div>
+</body>
+<script>
+  const input = document.getElementById("taskInput");
+  const taskTest = input.value.trim();
+
+  if(taskTest === ""){
+    alert("Digite uma tarefa!")
+    return;
+  }
+
+  const list = document.getElementById("todoList");
+  const li = document.createElement("li");
+  li.className = "todo-item";
+  li.innerHTML =` ${taskTest}<button class="delete-btn onclcick(this)>"Excluir</button>`
+
+  list.appendChild(li)
+  input.value ="";
+
+  function deleteTask(button){
+    const li = button.parentElement;
+    li.romove();
+  }
+</script>
+
+</html>

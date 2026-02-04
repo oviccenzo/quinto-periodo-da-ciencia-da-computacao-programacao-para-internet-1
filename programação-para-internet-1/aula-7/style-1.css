@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.item1 {
+    background-color: blue;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.item2 {
+    background-color: aqua;
+}
+
+button {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

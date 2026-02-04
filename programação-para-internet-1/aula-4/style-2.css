@@ -1,0 +1,44 @@
+.container-2{
+    display: grid;
+    grid-template-areas:
+            "Header Header Header"
+            "Menu Content Content"
+            "Menu Ads Cc";
+    grid-gap: 5px;
+    grid-template-rows: repeat(3,1fr);
+    height: 100vh;
+}
+
+.container-2 > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Header{
+    grid-area: Header;
+    background-color: darkslateblue;
+}
+
+#Menu{
+    grid-area: Menu;
+    background-color: indigo;
+}
+
+#Content{
+    grid-area: Content;
+    background-color: chartreuse;
+}
+
+#Ads{
+    grid-area: Ads;
+    background-color: mediumspringgreen;
+}
+
+#Cc{
+    grid-area: Cc;
+    background-color: orange;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula 8 - todo list simples</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <h2>Minha todo list</h2>
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+            <button id="addbtn" onclick="addTask()">Adicionar</button>
+        </div>
+        <ul class="todo-list" id="todoList">
+            <li class="todo-item"><span class="taskText">Adicionar um botão azul para marcar a tarefa como completada.
+            Ao clicar no botão, o texto da tarefa fica <span class="done">tachado</span>.</span>
+            </li>
+            <li class="todo-item">
+                <span class="taskText">
+                    Comprar pao de queijo
+                </span>
+                <span>
+                    <button class="done-btn" onclick="doneTask(this)" > Feito!  </button>
+                    <button class="delete-btn" onclick="deleteTask(this)" > Excluir  </button>
+                </span>
+            </li>
+            <li class="todo-item">
+                <span class="taskText">
+                    Estudar html 5
+                </span>
+                <span>
+                    <button class="done-btn" onclick="doneTask(this)">Feito!</button>
+                    <button class="delete-btn" onclick="deleteTask(this)">Excluir</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
