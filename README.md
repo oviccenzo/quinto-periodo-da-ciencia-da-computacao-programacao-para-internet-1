@@ -7,4 +7,4 @@ front-end
 
 
 
-https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fuds.com.br%2Fblog%2Ffront-end-o-que-e-linguagens-frameworks%2F&ved=0CBYQjRxqFwoTCKD1oIjevpIDFQAAAAAdAAAAABBV&opi=89978449
+<img width="780" height="404" alt="image" src="https://github.com/user-attachments/assets/3dd87059-b605-429e-a794-f71ec0253ef7" />
