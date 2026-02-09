@@ -1,0 +1,21 @@
+div.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 15px ;
+    grid-column-gap: 15px;
+    height: 120px;
+    width: 120px;
+    margin: 120px;
+}
+
+div.container > div{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 64, 0);
+    font-weight: 990;
+}
+
+
